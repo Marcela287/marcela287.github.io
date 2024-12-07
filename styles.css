@@ -3,15 +3,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f0f9ff; /* Celeste claro */
+    background: #f0f9ff;
     color: #333;
 }
 
 header {
-    background: #cbe4f9; /* Celeste pálido */
+    background: #cbe4f9;
     padding: 20px;
     text-align: center;
-    border-bottom: 3px solid #ffd1dc; /* Rosa pálido */
+    border-bottom: 3px solid #ffd1dc;
 }
 
 header h1 {
@@ -31,7 +31,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    background: #ffd1dc; /* Rosa pálido */
+    background: #ffd1dc;
     padding: 10px;
 }
 
@@ -110,3 +110,90 @@ footer p {
     font-size: 0.9em;
     color: #666;
 }
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav ul li a {
+    text-decoration: none;
+    position: relative;
+    color: #333;
+}
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ff9bb3;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+form input, form textarea, form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form button {
+    background-color: #87ceeb;
+    color: white;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+form button:hover {
+    background-color: #4682b4;
+}
+
+#contact h2 {
+
+    text-align: center;
+    color: #ff6b81;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    font-size: 24px;
+    color: #4a4a4a;
+    margin: 0 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+    color: #87ceeb;
+    transform: scale(1.2);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaciado entre iconos */
+    margin-top: 10px;
+}
+
+
