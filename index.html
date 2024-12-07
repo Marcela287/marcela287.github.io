@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RE_CONECTA - Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resources.html">Recursos</a></li>
+            </ul>
+        </nav>
+        <h1>La Salud Mental y los adolescentes</h1>
+        <p>Reflexionemos sobre la importancia de cuidar nuestra mente y </p>
+	<p>el como en la actualidad esta generacion de adolescente la ha dejado de lado en sus vidas.</p>
+    </header>
+
+    <main>
+        <section>
+            <div class="card" onclick="toggleInfo('info1')">
+                <h2>¿Por qué es importante?</h2>
+                <p>Haz clic para saber más</p>
+            </div>
+            <div id="info1" class="hidden-info">
+                <p>La salud mental es clave para el bienestar emocional, físico y social por ello, no solo la generacion de jovenes deberian darle importancia, si no tambien todas las personas que poseen entornos sociales grandes.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="card" onclick="toggleInfo('info2')">
+                <h2>Consecuencias de ignorarla</h2>
+                <p>Haz clic para saber más</p>
+            </div>
+            <div id="info2" class="hidden-info">
+                <p>Ignorar la salud mental puede llevar a problemas como ansiedad y depresión.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cindy Laínez. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleInfo(infoId) {
+            const info = document.getElementById(infoId);
+            info.style.display = info.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</body>
+</html>
