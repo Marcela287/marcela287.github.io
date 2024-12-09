@@ -7,11 +7,12 @@ body {
     color: #333;
 }
 
+
 header {
-    background: #cbe4f9;
-    padding: 20px;
     text-align: center;
-    border-bottom: 3px solid #ffd1dc;
+    padding: 20px;
+    background-color: #cbe4f9;
+    color: 4a4a4a;
 }
 
 header h1 {
@@ -28,11 +29,10 @@ header p {
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
     background: #ffd1dc;
-    padding: 10px;
+    padding: 15px;
 }
 
 nav ul li {
@@ -41,13 +41,14 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #4a4a4a;
+    color: black;
     font-weight: bold;
 }
 
 nav ul li a:hover {
     color: #ff6b81; /* Rosa fuerte */
 }
+
 
 /* Tarjetas */
 .card {
@@ -108,7 +109,7 @@ footer {
 
 footer p {
     font-size: 0.9em;
-    color: #666;
+    color: black;
 }
 
 .card {
@@ -196,4 +197,41 @@ form button:hover {
     margin-top: 10px;
 }
 
+.card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+}
 
+.card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover img {
+    transform: scale(1.1); /* Zoom en la imagen */
+}
+
+.card {
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega sombra */
+}
+
+.card img {
+    transition: transform 0.5s ease-in-out;
+}
+
+.card img:hover {
+    transform: rotate(360deg); /* Gira la imagen al pasar el cursor */
+}
+
+.card h3 {
+    color: #ff6b81; /* Rosa fuerte */
+    font-size: 1.5em;
