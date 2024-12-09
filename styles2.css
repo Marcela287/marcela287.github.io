@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f9ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: justify;
+    padding: 20px;
+    background-color: #cbe4f9;
+    color: 4a4a4a;
+}
+
+/* Barra de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: #ffd1dc;
+    padding: 15px;
+}
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+nav ul li a:hover {
+    color: #ff6b81; /* Rosa fuerte */
+}
+
+nav ul li a {
+    text-decoration: none;
+    position: relative;
+    color: #333;
+}
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ff9bb3;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.layout {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.main-content {
+    flex: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.hidden-info {
+    display: none;
+    background: #eaf4fc; /* Celeste muy claro */
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 400px;
+    border-left: 5px solid #ffd1dc; /* Línea rosa */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #87ceeb;
+    color: black;
+    margin-top: 20px;
+}
+
+.animated-image img {
+    width: 100%;
+    border-radius: 10px;
+    animation: slideIn 2s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card img {
+    transition: transform 0.5s ease-in-out;
+}
+
+.card img:hover {
+    transform: rotate(360deg); /* Gira la imagen al pasar el cursor */
+}
+

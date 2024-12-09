@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RE_CONECTA - Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>‏
+<body>
+    <header>‎
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+		<li><a href="resources.html">Recursos</a></li>
+		<li><a href="tips.html">Más</a></li>
+            </ul>
+        </nav>
+        <h1>PREVENCIÓN DEL SUICIDIO</h1>
+          </header>
+    <main>
+<section>
+    <div class="card" onclick="toggleInfo('info1')">
+        <img src="imagen1.jpg" alt="Imagen relacionada al ciclo cerrado">
+        <h2>El ciclo cerrado de los jóvenes</h2>
+        <p>Haz clic para saber más</p>
+    </div>
+    <div id="info1" class="hidden-info">
+                <p>¿Qué situaciones pueden llevar a una 
+persona a pensar en el suicidio?.</p>
+
+En ocasiones, las personas atraviesan por momentos en su vida 
+en los que la carga emocional a la que están sometidas es tan grande 
+que consideran imposible poder abordarla generándoles gran 
+sufrimiento. No son llamadas de atención ni signo de debilidad, 
+egoísmo, cobardía o valentía. 
+
+<p>
+
+El suicidio es una conducta compleja que puede darse por múltiples 
+factores que aumentan la vulnerabilidad. </p>
+    </div>
+</section>
+
+        <section>
+            <div class="card" onclick="toggleInfo('info2')">
+        <img src="imagen2.jpg" alt="Imagen relacionada al ciclo cerrado">
+                <h2> ¿Hablar sobre suicidio es bueno?</h2>
+                <p>Haz clic para saber más</p>
+            </div>
+            <div id="info2" class="hidden-info">
+                <p>Es bueno hablar sobre la prevención del suicido. Hablar salva 
+vidas porque el suicidio se puede prevenir.
+El suicidio se ha convertido en la segunda causa de muerte en jóvenes 
+a partir de los 14 años y algunos estudios encuentran tasas entre 15-
+20% de adolescentes con ideación suicida acompañada de sentimientos de desesperanza e indefensión. 
+<p>
+
+Conocer, tener información precisa y clara , saber cómo y qué podemos  hacer es muy importante y ¿sabes por qué?
+</p>
+            </div>
+       </section>
+    </main>
+<section id="contact">
+  	  <h2>Déjanos tu comentario</h2>
+    <form>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<div class="social-links">
+    <a href="https://web.facebook.com/Cindy.L166" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://x.com/marcelaa_lnz" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/c.marcelaa_16/" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+
+
+    <footer>
+        <p>&copy; 2024 Cindy Laínez. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleInfo(infoId) {
+            const info = document.getElementById(infoId);
+            info.style.display = info.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</body>
+</html>
