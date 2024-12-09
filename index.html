@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RE_CONECTA - Inicio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Salud Mental</title>
+    <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
     <header>
@@ -13,52 +12,66 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
 		<li><a href="resources.html">Recursos</a></li>
+		<li><a href="mas.html">Más</a></li>
             </ul>
         </nav>
-        <h1>La Salud Mental y los adolescentes</h1>
-        <p>Reflexionemos sobre la importancia de cuidar nuestra mente y </p>
-        <p>el como en la actualidad esta generacion de adolescente la ha dejado de lado en sus vidas.</p>
-    </header>
 
-    <main>
-        <section>
-            <div class="card" onclick="toggleInfo('info1')">
-                <h2>¿Por qué es importante?</h2>
-                <p>Haz clic para saber más</p>
-            </div>
-            <div id="info1" class="hidden-info">
-                <p>La salud mental es clave para el bienestar emocional, físico y social por ello, no solo la generacion de jovenes deberian darle importancia, si no tambien todas las personas que poseen entornos sociales grandes.</p>
-            </div>
-        </section>
+<header style="background-image: url('fond.webp'); background-size: cover; background-position: center; color: black; text-align: center; padding: 50px 0;">
+    <h1>LA SALUD MENTAL Y LA NUEVA GENERACIÓN</h1>
+    <p>Cuidemos nuestra mente, es nuestra herramienta más poderosa.</p>
+</header>
+    <main class="layout">
 
-        <section>
-            <div class="card" onclick="toggleInfo('info2')">
-                <h2>Consecuencias de ignorarla</h2>
-                <p>Haz clic para saber más</p>
-            </div>
-            <div id="info2" class="hidden-info">
-                <p>Ignorar la salud mental puede llevar a problemas como ansiedad y depresión.</p>
-            </div>
-       </section>
-    </main>
-<section id="contact">
-  	  <h2>Déjanos tu comentario</h2>
-    <form>
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="message">Mensaje:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">Enviar</button>
-    </form>
+
+        <!-- Área de texto informativo -->
+        <section class="main-content">
+<section>
+    <div class="animated-image">
+        <img src="fond1.jpg" alt="Salud mental">
+    </div>
 </section>
 
-<div class="social-links">
-    <a href="https://web.facebook.com/Cindy.L166" target="_blank"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://www.instagram.com/c.marcelaa_16/" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="https://x.com/marcelaa_lnz" target="_blank"><i class="fab fa-instagram"></i></a>
-</div>
+    <h2>La Salud Mental</h2>
+            <p>
+       La salud mental es un componente crítico de la salud general de los niños y adolescentes. Fomentar su salud social y emocional como parte del desarrollo sano debe ser una prioridad. La promoción de la salud mental y el tratamiento de desórdenes mentales del niño y el adolescente, deben ser metas importantes de la salud pública.
+            </p>
+            <p>
+                Reconocer su importancia es el primer paso hacia una vida más equilibrada. Aquí encontrarás recursos, consejos prácticos y herramientas útiles para cuidar de tu bienestar emocional.
 
+<p>“Los niños son nuestro futuro. Con la política y el planeamiento bien concebidos, los gobiernos pueden promover la salud mental de los niños y los adolescentes, 
+para su beneficio, el de la familia, la comunidad y la 
+sociedad.” OMS 2005 </p>
 
+            </p>
+        </section>
+
+        <!-- Área de tarjetas -->
+        <aside class="sidebar">
+       <section>
+            <div class="card" onclick="toggleInfo('resource1')">
+                <h2>LA OMS</h2>
+                <p>Haz clic para explorar</p>
+            </div>
+            <div id="resource1" class="hidden-info">
+                <ul>
+                    <p>“estado de bienestar sujeto a fluctuaciones provenientes de factores 
+biológicos y sociales, por el que los individuos reconocen sus capacidades y pueden hacer frente a las tensiones normales de la vida, 
+trabajar, ser productivos, así como formar y sostener relaciones armoniosas con los demás y participar constructivamente en los cambios 
+que pueden introducirse en el medio ambiente físico y social de sus comunidades.”</p>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="card" onclick="toggleInfo('resource2')">
+                <h2>IMPORTANCIA</h2>
+                <p>Haz clic para conocer más</p>
+            </div>
+            <div id="resource2" class="hidden-info">
+                <p>Para todos los individuos, la salud mental, la salud física y la salud social son componentes esenciales de la vida estrechamente relacionados e interdependientes. Cuanto mayores son nuestros conocimientos sobre esta relación, más evidente resulta la importancia básica de la salud mental para el bienestar general de los individuos, las sociedades y los países.</p>
+            </div>
+        </section>
+        </aside>
+    </main>
     <footer>
         <p>&copy; 2024 Cindy Laínez. Todos los derechos reservados.</p>
     </footer>
